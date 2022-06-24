@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'movie-search-app';
+  keyword = "";
+  send(keyword: any){
+    this.keyword = keyword;
+  }
 }

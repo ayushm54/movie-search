@@ -1,0 +1,17 @@
+<div class="main" style="padding: 7px;">
+  <mat-toolbar class="flexSpaceBetween main">
+    <a class="hyperLink" [routerLink]="['/']">
+      <h1>Movie Search</h1>
+    </a>
+    <span class="flexExpand"></span>
+    <span class="chekOutButton">
+      <mat-form-field class="input-box">
+        <mat-label class="input-label">Search</mat-label>
+        <input matInput type="text" [(ngModel)]="value" (keyup)="search()">
+        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="clear()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+    </span>
+  </mat-toolbar>
+</div>
